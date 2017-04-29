@@ -5,38 +5,46 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Stripe Dropdown</title>
-        <link rel="stylesheet" href="css/stripe-dropdown.css">
+        <link rel="stylesheet" href="stripe-dropdown.css">
         <link rel="author" href="humans.txt">
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="">
-          <ul>
-            <li class="logo"><a href="#">Logo</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#library">Library</a></li>
-            <li><a href="#findme">Find Me</a></li>
+      <div class="container">
+        <nav>
+          <div class="logo"><a href="/">Logo</a></div>
+          <ul class="nav-main">
+            <li class="projects-trigger"><a href="#projects" >Projects</a></li>
+            <li class="library-trigger"><a href="#library" >Library</a></li>
+            <li class="findme-trigger"><a href="#findme" >Find Me</a></li>
           </ul>
         </nav>
         <div class="dropdown-content">
-          <ul id="projects">
-            <li><a href="#">Project A</a></li>
-            <li><a href="#">Project B</a></li>
-            <li><a href="#">Project C</a></li>
-            <li><a href="#">Project D</a></li>
-          </ul>
-          <ul id="library">
-            <li><a href="#">Book 1</a></li>
-            <li><a href="#">Book 2</a></li>
-            <li><a href="#">Book 3</a></li>
-            <li><a href="#">Book 4</a></li>
-          </ul>
-          <ul id="findme">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Medium</a></li>
-          </ul>
+          <div class="dropdown-list">
+            <ul id="projects">
+              <li><a href="#">Project A</a></li>
+              <li><a href="#">Project B</a></li>
+              <li><a href="#">Project C</a></li>
+              <li><a href="#">Project D</a></li>
+            </ul>
+            <ul id="library">
+              <li><a href="#">Book 1</a></li>
+              <li><a href="#">Book 2</a></li>
+              <li><a href="#">Book 3</a></li>
+              <li><a href="#">Book 4</a></li>
+            </ul>
+            <ul id="findme">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Medium</a></li>
+            </ul>
+          </div>
         </div>
-        <script src="js/stripe-dropdown.js"></script>
+      </div>
+      <script src="stripe-dropdown.js"></script>
     </body>
 </html>
