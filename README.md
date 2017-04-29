@@ -1,3 +1,3 @@
 ### HodgePodge
 
-A collection of cool ui animations in real life example
+A collection of UI animations in real life examples

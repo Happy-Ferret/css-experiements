@@ -41,8 +41,8 @@ nav {
   text-align: right;
 }
 
-.nav-main li{
-  margin-right: 2rem;
+.nav-main a{
+  padding: 1.5rem;
 }
 
 /* dropdown-content */
@@ -52,10 +52,11 @@ nav {
   transform: translateX(600px);
   width: 160px;
   padding: 10px;
-  transition: all 1s ease-in-out;
+  transition: all 100ms ease-in-out;
   position: relative;
   min-height: 80px;
   overflow: hidden;
+  opacity: 0;
 }
 
 .dropdown-content a {
@@ -82,4 +83,9 @@ nav {
 
 .dropdown-list{
   transition: all 1s ease-in-out;
+}
+
+.body-text{
+  max-width: 50%;
+  margin: -50px auto 0 auto;
 }
