@@ -1,0 +1,46 @@
+html, body {
+  background-color: #22282d;
+  color: white;
+}
+
+.card {
+  perspective: 1000px; /* keep the perspective */
+}
+
+.flipper:hover{
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+  background-color: #5497eb;
+  border-radius: 6px;
+  width: 200px;
+  height: 300px;
+  margin: 50% auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.vocab {
+  font-size: 5rem;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}

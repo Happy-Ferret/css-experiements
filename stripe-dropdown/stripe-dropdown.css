@@ -1,19 +1,9 @@
 html, body {
   background-color: #E91E63;
-  font-family: sans-serif;
 }
 
 a {
   color: white;
-  text-decoration: none;
-}
-a:hover{
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
 }
 
 ul li {
