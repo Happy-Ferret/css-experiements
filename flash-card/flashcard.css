@@ -4,7 +4,7 @@ html, body {
 }
 
 .card {
-  perspective: 1000px; /* keep the perspective */
+  perspective: 10000px; /* keep the perspective */
 }
 
 .flipper:hover{
@@ -19,9 +19,10 @@ html, body {
   border-radius: 6px;
   width: 200px;
   height: 300px;
-  margin: 50% auto;
+  margin: 20px;
   padding: 20px;
   text-align: center;
+  float: left;
 }
 
 .vocab {
@@ -30,11 +31,6 @@ html, body {
 
 .front, .back {
   backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .front {
@@ -42,5 +38,5 @@ html, body {
 }
 
 .back {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
